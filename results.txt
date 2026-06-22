@@ -1,0 +1,431 @@
+
+> phase-0-js-css-fundamentals-lab@1.0.0 test
+> jest
+
+FAIL test/style.test.js
+  CSS Lab Tests
+    ✓ should link the CSS file (4 ms)
+    Navigation Bar
+      ✓ should set background color to #333 (1 ms)
+      ✓ should set font size to 1.2em (1 ms)
+      ✓ should add padding of 1em
+      ✓ should center-align the text (1 ms)
+      ✓ should set position to fixed
+      ✓ should set width to 100% (1 ms)
+      ✓ should set top to 0
+      ✓ should set z-index to 1000
+      ✓ should set list-style to none (1 ms)
+      ✓ should set margin to 0 for ul
+      ✓ should set padding to 0 for ul
+      ✓ should set display to inline for li (1 ms)
+      ✓ should add margin of 0 1em for li
+      ✓ should set text color to #fff for a
+    Main Content
+      ✓ should set padding-top to 5em for main content
+      ✓ should add padding of 2em 1em for sections
+      ✓ should center-align the text for sections
+      ✓ should increase font size of h1 in #home to 2.5em
+      ✓ should add margin-bottom of 0.5em for h1 in #home (1 ms)
+      ✓ should set paragraph font size to 1.2em in #home
+      ✓ should set paragraph color to #666 in #home
+    Portfolio Section
+      ✓ should set display to flex for portfolio container (1 ms)
+      ✓ should enable flex-wrap for portfolio container
+      ✓ should justify content to space around for portfolio container
+      ✓ should add padding of 1em for portfolio container
+      ✓ should set background color to #fff for portfolio items
+      ✓ should add border of 1px solid #ddd for portfolio items
+      ✓ should add margin of 1em around each portfolio item
+      ✓ should add padding of 1em on all sides for portfolio items
+      ✕ should apply box shadow for portfolio items (1 ms)
+      ✓ should set width to 30% for portfolio items
+      ✓ should set box-sizing to border-box for portfolio items
+      ✕ should apply transition for transform property for portfolio items (3 ms)
+      ✓ should make the text bold for headings in portfolio items (1 ms)
+      ✓ should add margin-bottom of 0.5em for headings in portfolio items
+      ✓ should add margin-bottom of 0.5em for paragraphs in portfolio items
+      ✓ should set color to #666 for paragraphs in portfolio items (1 ms)
+      ✓ should set width to 100% for images in portfolio items
+      ✕ should apply box shadow for images in portfolio items (1 ms)
+    Hover Effect for Portfolio Items
+      ✓ should scale portfolio items when hovered over
+    Footer
+      ✓ should set background color to #222
+      ✓ should set text color to #fff
+      ✓ should add padding of 2em
+      ✓ should center-align the text
+      ✓ should set position to relative
+      ✓ should set bottom to 0
+      ✓ should set width to 100%
+
+  ● CSS Lab Tests › Portfolio Section › should apply box shadow for portfolio items
+
+    expect(received).toContain(expected) // indexOf
+
+    Expected substring: "box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);"
+    Received string:    "/* Navigation Bar */·
+    .navbar {·
+      background-color: #333;·
+      font-size: 1.2em;·
+      padding: 1em;·
+      text-align: center;·
+      position: fixed;·
+      width: 100%;·
+      top: 0;·
+      z-index: 1000;·
+    }···
+    .navbar ul {·
+      list-style: none;·
+      margin: 0;·
+      padding: 0;·
+    }···
+    .navbar ul li {·
+      display: inline;·
+      margin: 0 1em;·
+    }···
+    .navbar ul li a {·
+      color: #fff;·
+      text-decoration: none;·
+    }···
+    /* Main Content */·
+    .main-content {·
+      padding-top: 5em;·
+    }···
+    section {·
+      padding: 2em 1em;·
+      text-align: center;·
+    }···
+    /* Home Section */·
+    #home h1 {·
+      font-size: 2.5em;·
+      margin-bottom: 0.5em;·
+    }···
+    #home p {·
+      font-size: 1.2em;·
+      color: #666;·
+    }···
+    /* Portfolio Section */·
+    .portfolio-container {·
+      display: flex;·
+      flex-wrap: wrap;·
+      justify-content: space-around;·
+      padding: 1em;·
+    }···
+    .portfolio-item {·
+      background-color: #fff;·
+      border: 1px solid #ddd;·
+      margin: 1em;·
+      padding: 1em;·
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);·
+      width: 30%;·
+      box-sizing: border-box;·
+      transition: transform 0.3s ease;·
+    }···
+    .portfolio-item:hover {·
+      transform: scale(1.05);·
+    }···
+    .portfolio-item h3 {·
+      font-weight: bold;·
+      margin-bottom: 0.5em;·
+    }···
+    .portfolio-item p {·
+      margin-bottom: 0.5em;·
+      color: #666;·
+    }···
+    .portfolio-item img {·
+      width: 100%;·
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);·
+    }···
+    /* Footer */·
+    #footer {·
+      background-color: #222;·
+      color: #fff;·
+      padding: 2em;·
+      text-align: center;·
+      position: relative;·
+      bottom: 0;·
+      width: 100%;·
+    }···
+    body {·
+      background: linear-gradient(to bottom, #f5f7fa, #c3cfe2);·
+      font-family: Arial, sans-serif;·
+    }···
+    #home {·
+      background-image: url(\"https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1600\");·
+      background-size: cover;·
+      background-position: center;·
+      background-repeat: no-repeat;·
+      color: white;·
+      min-height: 100vh;·
+      width: 100%;·
+    }···
+    .portfolio-item {·
+      border-radius: 15px;·
+      overflow: hidden;·
+    }···
+    .portfolio-item img {·
+      border-radius: 10px;·
+    }···
+    .navbar ul li a:hover {·
+      color: gold;·
+    }"
+
+      165 |
+      166 |     test('should apply box shadow for portfolio items', () => {
+    > 167 |       expect(styles).toContain('box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);');
+          |                      ^
+      168 |     });
+      169 |
+      170 |     test('should set width to 30% for portfolio items', () => {
+
+      at Object.toContain (test/style.test.js:167:22)
+
+  ● CSS Lab Tests › Portfolio Section › should apply transition for transform property for portfolio items
+
+    expect(received).toContain(expected) // indexOf
+
+    Expected substring: "transition: transform 0.3s;"
+    Received string:    "/* Navigation Bar */·
+    .navbar {·
+      background-color: #333;·
+      font-size: 1.2em;·
+      padding: 1em;·
+      text-align: center;·
+      position: fixed;·
+      width: 100%;·
+      top: 0;·
+      z-index: 1000;·
+    }···
+    .navbar ul {·
+      list-style: none;·
+      margin: 0;·
+      padding: 0;·
+    }···
+    .navbar ul li {·
+      display: inline;·
+      margin: 0 1em;·
+    }···
+    .navbar ul li a {·
+      color: #fff;·
+      text-decoration: none;·
+    }···
+    /* Main Content */·
+    .main-content {·
+      padding-top: 5em;·
+    }···
+    section {·
+      padding: 2em 1em;·
+      text-align: center;·
+    }···
+    /* Home Section */·
+    #home h1 {·
+      font-size: 2.5em;·
+      margin-bottom: 0.5em;·
+    }···
+    #home p {·
+      font-size: 1.2em;·
+      color: #666;·
+    }···
+    /* Portfolio Section */·
+    .portfolio-container {·
+      display: flex;·
+      flex-wrap: wrap;·
+      justify-content: space-around;·
+      padding: 1em;·
+    }···
+    .portfolio-item {·
+      background-color: #fff;·
+      border: 1px solid #ddd;·
+      margin: 1em;·
+      padding: 1em;·
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);·
+      width: 30%;·
+      box-sizing: border-box;·
+      transition: transform 0.3s ease;·
+    }···
+    .portfolio-item:hover {·
+      transform: scale(1.05);·
+    }···
+    .portfolio-item h3 {·
+      font-weight: bold;·
+      margin-bottom: 0.5em;·
+    }···
+    .portfolio-item p {·
+      margin-bottom: 0.5em;·
+      color: #666;·
+    }···
+    .portfolio-item img {·
+      width: 100%;·
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);·
+    }···
+    /* Footer */·
+    #footer {·
+      background-color: #222;·
+      color: #fff;·
+      padding: 2em;·
+      text-align: center;·
+      position: relative;·
+      bottom: 0;·
+      width: 100%;·
+    }···
+    body {·
+      background: linear-gradient(to bottom, #f5f7fa, #c3cfe2);·
+      font-family: Arial, sans-serif;·
+    }···
+    #home {·
+      background-image: url(\"https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1600\");·
+      background-size: cover;·
+      background-position: center;·
+      background-repeat: no-repeat;·
+      color: white;·
+      min-height: 100vh;·
+      width: 100%;·
+    }···
+    .portfolio-item {·
+      border-radius: 15px;·
+      overflow: hidden;·
+    }···
+    .portfolio-item img {·
+      border-radius: 10px;·
+    }···
+    .navbar ul li a:hover {·
+      color: gold;·
+    }"
+
+      177 |
+      178 |     test('should apply transition for transform property for portfolio items', () => {
+    > 179 |       expect(styles).toContain('transition: transform 0.3s;');
+          |                      ^
+      180 |     });
+      181 |
+      182 |     test('should make the text bold for headings in portfolio items', () => {
+
+      at Object.toContain (test/style.test.js:179:22)
+
+  ● CSS Lab Tests › Portfolio Section › should apply box shadow for images in portfolio items
+
+    expect(received).toContain(expected) // indexOf
+
+    Expected substring: "box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);"
+    Received string:    "/* Navigation Bar */·
+    .navbar {·
+      background-color: #333;·
+      font-size: 1.2em;·
+      padding: 1em;·
+      text-align: center;·
+      position: fixed;·
+      width: 100%;·
+      top: 0;·
+      z-index: 1000;·
+    }···
+    .navbar ul {·
+      list-style: none;·
+      margin: 0;·
+      padding: 0;·
+    }···
+    .navbar ul li {·
+      display: inline;·
+      margin: 0 1em;·
+    }···
+    .navbar ul li a {·
+      color: #fff;·
+      text-decoration: none;·
+    }···
+    /* Main Content */·
+    .main-content {·
+      padding-top: 5em;·
+    }···
+    section {·
+      padding: 2em 1em;·
+      text-align: center;·
+    }···
+    /* Home Section */·
+    #home h1 {·
+      font-size: 2.5em;·
+      margin-bottom: 0.5em;·
+    }···
+    #home p {·
+      font-size: 1.2em;·
+      color: #666;·
+    }···
+    /* Portfolio Section */·
+    .portfolio-container {·
+      display: flex;·
+      flex-wrap: wrap;·
+      justify-content: space-around;·
+      padding: 1em;·
+    }···
+    .portfolio-item {·
+      background-color: #fff;·
+      border: 1px solid #ddd;·
+      margin: 1em;·
+      padding: 1em;·
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);·
+      width: 30%;·
+      box-sizing: border-box;·
+      transition: transform 0.3s ease;·
+    }···
+    .portfolio-item:hover {·
+      transform: scale(1.05);·
+    }···
+    .portfolio-item h3 {·
+      font-weight: bold;·
+      margin-bottom: 0.5em;·
+    }···
+    .portfolio-item p {·
+      margin-bottom: 0.5em;·
+      color: #666;·
+    }···
+    .portfolio-item img {·
+      width: 100%;·
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);·
+    }···
+    /* Footer */·
+    #footer {·
+      background-color: #222;·
+      color: #fff;·
+      padding: 2em;·
+      text-align: center;·
+      position: relative;·
+      bottom: 0;·
+      width: 100%;·
+    }···
+    body {·
+      background: linear-gradient(to bottom, #f5f7fa, #c3cfe2);·
+      font-family: Arial, sans-serif;·
+    }···
+    #home {·
+      background-image: url(\"https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1600\");·
+      background-size: cover;·
+      background-position: center;·
+      background-repeat: no-repeat;·
+      color: white;·
+      min-height: 100vh;·
+      width: 100%;·
+    }···
+    .portfolio-item {·
+      border-radius: 15px;·
+      overflow: hidden;·
+    }···
+    .portfolio-item img {·
+      border-radius: 10px;·
+    }···
+    .navbar ul li a:hover {·
+      color: gold;·
+    }"
+
+      204 |
+      205 |     test('should apply box shadow for images in portfolio items', () => {
+    > 206 |       expect(styles).toContain('box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);');
+          |                      ^
+      207 |     });
+      208 |   });
+      209 |
+
+      at Object.toContain (test/style.test.js:206:22)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 45 passed, 48 total
+Snapshots:   0 total
+Time:        1.51 s, estimated 2 s
+Ran all test suites.
